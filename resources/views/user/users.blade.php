@@ -24,6 +24,7 @@
       </tr>
     </thead>
     <tbody>
+    <div class="container">
      @foreach($users as $user)
       <tr>
         <td> {{ $user->name }} </td>
@@ -32,7 +33,9 @@
         <td> {{ $user->email}} </td>
         <td> {{$user->educational_level_id}} </td>
       </tr>
-    @endforeach
+      @endforeach
+      <div class="container">
+      {{ $users->links() }}
     </tbody>
   </table>
 @endif

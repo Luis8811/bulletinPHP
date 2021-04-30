@@ -31,7 +31,7 @@
         <td> {{ $user->surname }} </td>
         <td> {{ $user->sex }} </td>
         <td> {{ $user->email}} </td>
-        <td> {{$user->educational_level_id}} </td>
+        <td>{{$user->educational_level->level}}</td>
       </tr>
       @endforeach
       <div class="container">

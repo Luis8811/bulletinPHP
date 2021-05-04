@@ -1,15 +1,15 @@
 @extends('common.app')
 
-@section('title', 'Listado de usuarios')
+@section('title', 'Listado de suscriptores')
 
 @section('sidebar')
     @parent
 
-    <p>Cantidad de usuarios: {{sizeof($users)}}.</p>
+    <p>Cantidad de suscriptores mostrados: {{sizeof($users)}}.</p>
 @endsection
 
 @section('content')
-<h1>Listado de usuarios</h1>
+<h1>Listado de suscriptores</h1>
 <br>
 @if($users)
 

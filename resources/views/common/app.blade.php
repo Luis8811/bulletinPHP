@@ -13,7 +13,7 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header">
-                <a class="navbar-brand" href="../public/index">Caso práctico básico</a>
+                <a class="navbar-brand" href="../public/index">Estad&iacute;sticas</a>
               </div>
               <ul class="nav navbar-nav">
                 <li><a href="../public/users">Listado de suscriptores</a></li>

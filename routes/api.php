@@ -21,5 +21,9 @@ Route::get('users', 'UserController@users');
 
 Route::get('user/{id}', 'UserController@user');
 
+Route::get('females', 'UserController@females');
+
+Route::get('males', 'UserController@males');
+
 
 

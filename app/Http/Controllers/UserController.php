@@ -35,6 +35,27 @@ class UserController extends Controller
     }
 
     /**
+     * Get the females
+     * @author Luis Manuel Suárez González
+     * @return JSON of female users
+     */
+    public function females()
+    {
+        return response()->json(User::where('sex', 'f')->get(), 200);
+    }
+
+    /**
+     * Get the males
+     * @author Luis Manuel Suárez González
+     * @return JSON of male users
+     */
+    public function males()
+    {
+        return response()->json(User::where('sex', 'm')->get(), 200);
+    }
+
+
+    /**
      * Get the specified user
      * @author Luis Manuel Suárez González
      * @return JSON of the specified user
@@ -66,5 +87,4 @@ class UserController extends Controller
         $newUser->save();
         return redirect('/users');
     }
-
 }

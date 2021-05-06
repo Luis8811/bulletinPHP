@@ -56,6 +56,18 @@ class UserController extends Controller
 
 
     /**
+     * Adds a new user
+     * @author Luis Manuel Suárez González
+     * @return JSON new user inserted in the database
+     */
+    public function insertUser(Request $request)
+    {
+        $newUser = User::create($request->all());
+        return response($newUser, 201);
+    }
+
+
+    /**
      * Get the specified user
      * @author Luis Manuel Suárez González
      * @return JSON of the specified user

@@ -25,5 +25,7 @@ Route::get('females', 'UserController@females');
 
 Route::get('males', 'UserController@males');
 
+Route::post('insert_user', 'UserController@insertUser');
+
 
 

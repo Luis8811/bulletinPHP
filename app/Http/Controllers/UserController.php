@@ -25,6 +25,30 @@ class UserController extends Controller
     }
 
     /**
+     * Get the registered users in a JSON
+     * @author Luis Manuel Suárez González
+     * @return JSON of users
+     */
+    public function users()
+    {
+        return response()->json(User::all(), 200);
+    }
+
+    /**
+     * Get the specified user
+     * @author Luis Manuel Suárez González
+     * @return JSON of the specified user
+     */
+    public function user($id)
+    {
+        $user = User::find($id);
+        if (is_null($user)) {
+            return response(['Message'=>'User not found!'], 404);
+        }
+        return response()->json(User::find($id), 200);
+    }
+
+    /**
      * Adds a new user
      * Adds a new user and performs a redirect to '/users'
      * @return redirect '/users'

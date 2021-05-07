@@ -30,12 +30,30 @@
             console.log(users);
             let males = 0;
             let females = 0;
+            let fp = 0;
+            let primary = 0;
+            let secondary = 0;
+            let college = 0;
             for (let i = 0; i < users.length; i++) {
                 if (users[i].sex == 'F') {
                     females ++;
                 } else {
                     males ++;
                 }
+                let educational_level = users[i].educational_level_id;
+                switch (educational_level) {
+                    case 0:
+                    primary ++;
+                    break;
+                    case 1:
+                    secondary ++;
+                    break;
+                    case 2:
+                    fp ++;
+                    default:
+                    college ++;
+                }
+
             }
             console.log("Females:");
             console.log(females);
@@ -75,18 +93,14 @@
             }
         });
 
-         });
-
-        </script>
-        <script>
-            var ctxEducation = document.getElementById('education').getContext('2d');
+        var ctxEducation = document.getElementById('education').getContext('2d');
         var educationChart = new Chart(ctxEducation, {
             type: 'doughnut',
             data: {
                 labels: ['Primario', 'Secundario', 'FP', 'Superior'],
                 datasets: [{
                     label: 'Education',
-                    data: [12, 19, 20, 21],
+                    data: [primary, secondary, fp, college],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -115,6 +129,8 @@
                 }
             }
         });
-        </script>
 
+         });
+
+        </script>
 @endsection

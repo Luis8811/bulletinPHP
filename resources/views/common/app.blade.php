@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #0d6efd ;
+          color: #ffffff;
+          text-align: center;
+        }
+
+        .logo {
+            color: #f8f9fa;
+            text-shadow: 2px 2px orangered;
+        }
+        </style>
     <head>
         <title>Boletines del siglo XXI - @yield('title')</title>
         <meta charset="utf-8">
@@ -10,6 +26,11 @@
     </head>
     <body>
         @section('sidebar')
+        <header>
+            <div class="container-fluid" style="background-color: #0d6efd;">
+                <h1 class="logo">Boletines del siglo XXI</h1>
+            </div>
+        </header>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header">
@@ -26,5 +47,8 @@
         <div class="container">
             @yield('content')
         </div>
+        <footer class="footer">
+            d
+        </footer>
     </body>
 </html>

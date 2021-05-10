@@ -5,7 +5,7 @@
 
 @section('sidebar')
     @parent
-    <h1><span class="label label-default">Estad&iacute;sticas de suscriptores</span></h1>
+    <h1><span class="label label-primary">Estad&iacute;sticas de suscriptores <i class="fas fa-chart-pie"></i></span></h1>
 @endsection
 
 @section('content')

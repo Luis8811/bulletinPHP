@@ -7,7 +7,9 @@
 @endsection
 
 @section('content')
-<h1>Registrar nuevo suscriptor</h1>
+<h1>
+<span class="label label-primary">Registrar nuevo suscriptor <i class="fas fa-user-plus"></i></span>
+</h1>
 <form method="post" action="sign_up_OK">
     @csrf
     <fieldset>

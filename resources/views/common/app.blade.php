@@ -11,11 +11,46 @@
           text-align: center;
         }
 
+        h1 {
+            text-align: center;
+        }
+
         .logo {
             color: #f8f9fa;
             text-shadow: 2px 2px orangered;
         }
-        </style>
+
+        i.fas,i.fab {
+            border: 1px solid white;
+            color: #ffffff;
+      }
+
+    .fa-user-plus {
+      color: salmon;
+    }
+
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    a:active {
+        color: white;
+        text-decoration: none;
+    }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <head>
         <title>Boletines del siglo XXI - @yield('title')</title>
         <meta charset="utf-8">
@@ -48,7 +83,7 @@
             @yield('content')
         </div>
         <footer class="footer">
-            d
+            <a href="https://www.linkedin.com/in/luis-manuel-suarez-gonzalez"><i class="fab fa-linkedin"></i> Luis Manuel Su&aacute;rez Gonz&aacute;lez</a>
         </footer>
     </body>
 </html>

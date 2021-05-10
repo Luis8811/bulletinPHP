@@ -9,7 +9,9 @@
 @endsection
 
 @section('content')
-<h1>Listado de suscriptores</h1>
+<h1>
+<span class="label label-primary">Listado de suscriptores <i class="fas fa-users"></i></span>
+</h1>
 <br>
 @if($users)
 
